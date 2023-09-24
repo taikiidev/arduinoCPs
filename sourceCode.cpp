@@ -1,6 +1,6 @@
 
 
-// Código um sensor de luminosidade.
+// Código para um sensor de luminosidade.
 // Definindo as variáveis
 int ledVerde = 10;
 int ledAmarelo = 11;
