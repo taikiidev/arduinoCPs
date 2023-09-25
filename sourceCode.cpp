@@ -37,12 +37,13 @@ void loop()
   }
   else if (leitura >= 150 && leitura < 260)
     // Caso o valor indicado pela leitura esteja entre 150 e 260, acenda o led amarelo e apague os demais
+    // Ao ajustar-se na condicao acima o buzzer toca por 3 segundos, para por 2 segundos e volta a tocar.
   {
      digitalWrite (ledVerde, LOW);
     digitalWrite (ledAmarelo, HIGH);
     digitalWrite (ledVermelho, LOW);
     tone (piezo, 5000, 3000);
-    delay (3000);
+    delay (2000);
   }
   else
     // Caso o valor indicado pela leitura esteja acima de 260, toque o buzzer e acenda o led vermelho enquanto os outros leds se apagam
